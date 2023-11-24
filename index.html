@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script>
+        $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+    </script>
+</head>
+<body>
+    <head>
+        <title>School</title>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Lepcha">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+        <body id="home">
+        <nav class="navbar_top">
+            <div class="logo">School</div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="bar_icon">&#9776;</label>
+                <div class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#course">Course</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    
+        <div class="home-sec">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>Delivering Quality Education</h3>
+                            <h1 class="hadding_h1">UNMATCHED APPROACH</h1>
+                            <div class="my-5"><button>GET AWESOME</button> <button class="btn_green">FEATURE LIST</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid" style="background: #e9e9e9;">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h2 class="hadding_h2">
+                        <i class="fa fa-circle-o-notch"></i>
+                        WELCOME TO THE EDU-CENTER
+                        <i class="fa fa-circle-o-notch"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="features">
+            <div class="row text-center row_width">
+                <div class="p_width">
+                    <h1 align="center"class="hadding_pt"><span class="hadding_bt">FEATURE LIST</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.Lorem ipsum dolor sit amet,consectetuer adipiscing elit.
+                        Aenean commodo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <i class="fa fa-paper-plane-o fa-4x icon-round-border"></i>
+                    <h3>Quality Education</h3>
+                    <hr class="hr_5" />
+                    <hr class="hr_5" />
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo .</p>
+                    <a href="#" class="btn btn-info btn-set">ASK THE EXPERT</a>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-bolt fa-4x icon-round-border"></i>
+                    <h3>SYSTEMATIC APPROACH</h3>
+                    <hr class="hr_5" />
+                    <hr class="hr_5" />
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo .</p>
+                    <a href="#" class="btn btn-info btn-set">ASK THE EXPERT</a>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-magic fa-4x icon-round-border"></i>
+                    <h3>ONE TO ONE STUDY</h3>
+                    <hr class="hr_5" />
+                    <hr class="hr_5" />
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo .</p>
+                    <a href="#" class="btn btn-info btn-set">ASK THE EXPERT</a>
+                </div>
+            </div>
+        </div>
+        <div class="our-faculty" id="faculty">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row text-center row_width">
+                        <div class="p_width">
+                            <h1 class="hadding_pt"><span class="hadding_bt">FACULTY LIST </span></h1>
+                        
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean commodo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean commodo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <img src="https://i.pinimg.com/originals/52/b2/aa/52b2aaf2ac84b40b384dddb36efbb65a.jpg" class="img-rounded img_border_double"/ width="50%">
+                            <h3>ROXI CHI LUENA</h3>
+                            <hr class="hr_5" />
+                            <h4>
+                                Desigining <br />
+                                Department
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo .</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="https://www.allergicliving.com/wp-content/uploads/2013/10/Allergic-Living-Samantha-Posteraro-crop21.jpg" class="img-rounded img_border_double" / width="53%">
+                            <h3>JANE DEO ALEX</h3>
+                            <hr class="hr_5" />
+                            <h4>
+                                Enginering <br />
+                                Department
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo .</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="https://s.yimg.com/ny/api/res/1.2/6fh8dX7HxCqWj0fCxMIKfQ--/YXBwaWQ9aGlnaGxhbmRlcjtoPTY2Ng--/https://s.yimg.com/cd/resizer/2.0/original/-Q7ql8v_Hy83ubHz_N1KOxjFLbo" class="img-rounded img_border_double" / width="50%">
+                            <h3>RUBY DECORSA</h3>
+                            <hr class="hr_5" />
+                            <h4>
+                                Management <br />
+                                Department
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container my-5" id="course">
+            <div class="row text-center row_width">
+                <div class="p_width">
+            <h1 align="center"class="hadding_pt"><span class="hadding_bt">OUR COURSES </span></h1>
+            <p align="center">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.
+            </p>
+        </div>
+    </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://thekalyanischool.com/wp-content/uploads/2021/05/DSC09652-min-min-2-scaled.jpg" width="100%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="bg_gray1"><strong>350+</strong> DESIGNING COURSES</div>
+                            <div class="bg_gray"><strong>250+</strong> ENGINEERING COURSES</div>
+                            <div class="bg_gray"><strong>153+</strong> MANAGEMENT COURSES</div>
+                            <div class="bg_blue">
+                                <h1><strong> 2500 + </strong></h1>
+                                <hr />
+                                <h1>Centers</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-us my-5" id="contact">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row text-center row_width">
+                        <div class="p_width">
+                    <h1 align="center" class="hadding_pt"><span class="hadding_bt">CONTACT US</span></h1>
+                    <p align="center">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12">
+                            <input type="text" class="input_size" name="fname" id="fname" placeholder="Your Name"/>
+                            <input type="email" class="input_size" name="email" id="email" placeholder="Your Email"/>
+                            <textarea class="input_size" rows="7" name="message" id="message" placeholder="Message"></textarea>
+                            <button type="submit" class="input_btn">SUBMIT REQUEST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container my">
+            <div class="row text-center">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.334566422665!2d75.73763456012502!3d27.082744806662184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dadfa8f444f5f%3A0x98ef301b3278e271!2sPusp%20Vatika!5e0!3m2!1sen!2sin!4v1636813692739!5m2!1sen!2sin" width="100%" style="border:1px solid green;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h1><span class="">Social Conectivity</span></h1>
+                    <div>
+                        <i class="fa fa-facebook fa_social"></i>
+                        <i class="fa fa-linkedin fa_social"></i>
+                        <i class="fa fa-code fa_social"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-sm-12 footer">
+                    All Rights Reserved | Design by : Lilesh
+                </div>
+            </div>
+        </div>
+            
+    </body>
+</body>
+</html>
